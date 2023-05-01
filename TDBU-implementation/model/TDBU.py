@@ -2,7 +2,7 @@
 @author Isaac Zheng
 
 This is an implementation of the model described in the paper LONG DOCUMENT SUMMARIZATION WITH TOP-DOWN AND BOTTOM-UP INFERENCE
-This model currently (Apr 28) has the highest score at the arXiv and Pubmed dataset and performs well at long document summarization.
+This model currently (Apr 28) has the highest score at the arXiv and Pubmed dataset and performs well on long document summarization.
 You can find this paper at https://doi.org/10.48550/arXiv.2203.07586.
 Their model is not open source so this is just my implementation.
 
