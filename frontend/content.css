@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+.modal_isaac * {
+   font-family: "Poppins", sans-serif;
+}
+
+.modal_isaac {
+   --gap: 20px;
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   padding: var(--gap);
+   background: rgba(0, 0, 0, 0.5);
+   font-family: sans-serif;
+   z-index: 9999;
+}
+
+.modal_isaac__inner {
+   background: #ffffff;
+   width: 100%;
+   max-width: 800px;
+   overflow: hidden;
+   border-radius: 8px;
+}
+
+.modal_isaac__top {
+   display: flex;
+   align-items: center;
+   background-color: whitesmoke;
+   padding: 15px var(--gap);
+}
+
+.modal_isaac__title {
+   flex-grow: 1;
+   font-size: 25px;
+}
+
+.modal_isaac__close {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   background: none;
+   border: none;
+   outline: none;
+   font-size: 16px;
+}
+
+.modal_isaac__content {
+   line-height: 1.5;
+   padding: var(--gap);
+   padding-bottom: 0;
+}
+
+.modal_isaac__content textarea{
+   display: block;
+   width: 100%;
+   resize: none;
+   padding: 15px;
+   color: #202020;
+   border: 1.5px solid #b2b2b2;
+   border-radius: 6px;
+   outline: none;
+   font-size: 16px;
+}
+
+.modal_isaac__bottom {
+   text-align: right;
+   padding: 15px var(--gap);
+}
+
+.modal_isaac__button {
+   display: inline-block;
+   cursor: pointer;
+   color: #fff;
+   background: #4285F4;
+   font-size: 16px;
+   border: none;
+   border-radius: 4px;
+   padding: 8px 14px;
+   transition: all 0.2s ease;
+}
+
+.modal_isaac__button:hover {
+   transform: scale(1.1);
+}
+
+.modal_isaac__button:not(:last-child) {
+   margin-right: var(--gap);
+}
+  
+.copied-msg {
+   color: #23C552;
+   margin-right: 10px;
+}

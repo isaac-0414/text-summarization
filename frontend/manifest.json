@@ -1,0 +1,22 @@
+{
+  "name": "Isaac's Text Summarization",
+  "version": "0.1.0",
+  "description": "Simple extension that summarize content of a webpage",
+  "permissions": ["storage", "tabs", "contextMenus"],
+  "host_permissions": ["*://*/*", "file://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*", "file://*/*"],
+      "css": ["content.css"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Isaac's Text Summarization",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
