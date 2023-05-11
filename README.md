@@ -63,4 +63,5 @@ I build a chrome extension to help people summarize the webpage easy and quickly
  <img src="chrome_ext.png" width = "550" alt="d" align=center />
 </div>
 
+<br />
 Here is a demo of how to use the extension: https://drive.google.com/drive/folders/1sxSjAuTSqMyjwJgMtFdMG6rfrCvmXOK3?usp=sharing
