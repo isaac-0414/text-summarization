@@ -1,28 +1,25 @@
-# BRIO: Bringing Order to Abstractive Summarization
+# Text summarization project
 
-This repo contains the code, data and trained models for our paper [BRIO: Bringing Order to Abstractive Summarization](https://arxiv.org/abs/2203.16804).
+This repo contains the code and trained models for my text summarization project
 
 ## Quick Links
 
 - [Overview](#overview)
-- [How to Install](#how-to-install)
-- [Description of Codes](#description-of-codes)
-  - [Workspace](#workspace)
-- [Preprocessing](#preprocessing)
-  - [Preprocessed Data](#preprocessed-data)
-  - [Generate Candidate Summaries](#generate-candidate-summaries)
-  - [Preprocess Your Own Data](#preprocess-your-own-data)
-- [How to Run](#how-to-run)
+- [How to Run my model](#how-to-run-model)
   -  [Hyper-parameter Setting](#hyper-parameter-setting)
   -  [Train](#train)
   -  [Evaluate](#evaluate)
-- [Results, Outputs, Checkpoints](#results-outputs-checkpoints)
-- [Use BRIO with Huggingface](#use-brio-with-huggingface)
+  -  [Use](#use)
+  - [Results and uutputs](#results-outputs)
+  - [Future Plans](#future-plans)
+- [Run my chrome extension](#run-my-chrome-extension)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
 
 ## Overview
 
-We present a novel training paradigm for neural abstractive summarization.
-Instead of using MLE training alone, we introduce a contrastive learning component, which encourages the abstractive models to estimate the probability of system-generated summaries more accurately.
+This project contains two parts. In the first part, I tried to implement the model described in the paper Long Document Summarization With Top-Down And Bottom-up Inference(https://doi.org/10.48550/arXiv.2203.07586) This model is specialized for long document summarization and currently has the highest score at the arXiv and Pubmed dataset and performs well on long document summarization, but the original paper didn't share their code.
+
 
 <div  align="center">
  <img src="model.png" width = "550" alt="d" align=center />
