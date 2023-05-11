@@ -22,7 +22,7 @@ This project contains two parts. In the first part, I tried to implement the mod
 
 
 <div  align="center">
- <img src="model.png" width = "550" alt="d" align=center />
+ <img src="model.jpg" width = "550" alt="d" align=center />
 </div>
 
 
