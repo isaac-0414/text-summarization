@@ -20,14 +20,19 @@ This repo contains the code and trained models for my text summarization project
 
 This project contains two parts. In the first part, I tried to implement the model described in the paper Long Document Summarization With Top-Down And Bottom-up Inference(https://doi.org/10.48550/arXiv.2203.07586) This model is specialized for long document summarization and currently has the highest score at the arXiv and Pubmed dataset and performs well on long document summarization, but the original paper didn't share their code.
 
+Like in the paper, my model is also based on Bart(it also works with Pegasus and T5). For local self attention(sliding-window attention), I am using the implementation of sliding-window attention from Longformer(Huggingface). For full self attention and cross attention, I am using the attention of Bart. 
+
 
 <div  align="center">
  <img src="model.jpg" width = "550" alt="d" align=center />
 </div>
 
+<br />
+
+In the second part, I (will) make a chrome extension with backend that can summariza the whole webpage. Currently, since my model needs more training to be satisfying, I am using Pysummarization at the backend for now.
 
 
-## How to Install
+## How to run my model
 
 - `python3.8`
 - `conda create --name env --file spec-file.txt`
@@ -40,19 +45,9 @@ This project contains two parts. In the first part, I tried to implement the mod
         pip install -r requirements.txt
         python setup.py install
         ```
-Our code is based on Huggingface's [Transformers](https://github.com/huggingface/transformers) library. 
+My code is based on Huggingface's [Transformers](https://github.com/huggingface/transformers) library. 
 
-## Description of Codes
-- `cal_rouge.py` -> ROUGE calculation
-- `config.py` -> model configuration
-- `data_utils.py` -> dataloader
-- `label_smoothing_loss.py` -> label smoothing loss
-- `main.py` -> training and evaluation procedure
-- `model.py` -> models
-- `modeling_bart.py`, `modeling_pegasus.py` -> modefied from Transformers library to support more efficient training
-- `preprocess.py` -> data preprocessing
-- `utils.py` -> utility functions
-- `gen_candidate.py` -> generate candidate summaries
+
 
 
 ### Workspace
