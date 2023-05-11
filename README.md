@@ -5,7 +5,7 @@ This repo contains the code and trained models for my text summarization project
 ## Quick Links
 
 - [Overview](#overview)
-- [How to Run my model](#how-to-run-model)
+- [How to Run my model](#how-to-run-my-model)
   -  [Hyper-parameter Setting](#hyper-parameter-setting)
   -  [Train](#train)
   -  [Evaluate](#evaluate)
